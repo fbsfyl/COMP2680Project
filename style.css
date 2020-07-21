@@ -1,0 +1,20 @@
+
+/*
+style.html
+7/20/2020
+Course Schedule Maker
+Developed by: Yuxuan Feng
+COMP2680 Web Project
+*/
+@charset "utf-8";
+
+table{
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th, td{
+    border:1px solid black;
+    height: 40px;
+}

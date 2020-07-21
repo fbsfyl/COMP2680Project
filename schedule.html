@@ -1,0 +1,154 @@
+﻿<!--
+schedule.html
+7/20/2020
+Course Schedule Maker
+Developed by: Yuxuan Feng
+COMP2680 Web Project
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Schedule Maker</title>
+    <meta charset="utf-8">   
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="input">
+        <select id="day">
+            <option value ="Monday">Monday</option>
+            <option value ="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+        <br>
+        Start Time:<br>
+        <input type="text" id = "hour"> : <input type="text" id = "minute">
+        <select id="meridiem">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <br>
+        Course:<br>
+        <input type="text" id = "course">
+        <br>
+        Location:<br>
+        <input type="text" id = "location">
+        <br><br>
+        <input type="submit" value="Generate" onclick="generate()">
+    </div>
+
+    <div class="table">
+        <table id = "table">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var oDay=document.getElementById("day");
+        var oHour=document.getElementById("hour");
+        var oMinute=document.getElementById("minute");
+        var oMeridiem=document.getElementById("meridiem");
+        var oCourse=document.getElementById("course");
+        var oLocation=document.getElementById("location");
+        function generate()
+        {
+            var col = 0;
+            var row = 1;
+            var table = document.getElementById("table"); //find table
+
+            //find column
+            switch(oDay.value)
+            {
+                case "Monday":
+                    col = 0;
+                    break;
+                case "Tuesday":
+                    col = 1;
+                    break;
+                case "Wednesday":
+                    col = 2;
+                    break;
+                case "Thursday":
+                    col = 3;
+                    break;
+                case "Friday":
+                    col = 4;
+                    break;
+            }
+
+            //find row
+            while(table.rows[row].cells[col].innerHTML != "")
+            {
+                row++;
+                if(row >= table.rows.length)
+                    break;
+            }
+
+            //report message
+            console.log("row = " + row);
+            console.log("length = " + table.rows.length);
+
+            //row full check
+            if(row >= table.rows.length)
+            {
+                newLine();
+                console.log("Full! New row generated! length = " + table.rows.length)
+            }
+
+            //generate data to table
+            table.rows[row].cells[col].innerHTML = oHour.value+":"+oMinute.value+" "+oMeridiem.value
+                +"<br/>"+oCourse.value
+                +"<br/>"+oLocation.value;
+        }
+        function newLine()
+        {
+            var table = document.getElementById("table"); //find table
+            var newRow = table.insertRow(table.rows.length)//add a new row
+            var i;
+            for(i = 0; i <= 4; i++)
+            {
+                newRow.insertCell(i)//add new cells
+            }
+        }
+    </script>
+</body>
+</html>
+
