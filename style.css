@@ -1,20 +1,36 @@
 
-/*
-style.html
-7/20/2020
-Course Schedule Maker
-Developed by: Yuxuan Feng
-COMP2680 Web Project
-*/
-@charset "utf-8";
+	/*
+	style.html
+	7/20/2020
+	Course Schedule Maker
+	Developed by: Yuxuan Feng and  Chizitere Ogbonna-Onugha
+	COMP2680 Web Project
+	*/
+	
+	@charset "utf-8";
 
-table{
-    border:1px solid black;
-    border-collapse: collapse;
-    width: 40%;
-}
+	table{
+		border:1px solid black;
+		border-collapse: collapse;
+		width: 40%;
+	}
 
-th, td{
-    border:1px solid black;
-    height: 40px;
-}
+	th, td{
+		border:1px solid black;
+		height: 40px;
+	}
+	 
+	 select {
+		 background-color:grey;
+	 }
+	 
+	 thead{
+		 
+		 background-color:grey;
+	 }
+	 	 
+	body
+	{
+		font-family: Georgia;
+		background-color: beige;
+	}
