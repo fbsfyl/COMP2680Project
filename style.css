@@ -13,6 +13,7 @@
 		border:1px solid black;
 		border-collapse: collapse;
 		width: 40%;
+		margin: auto;
 	}
 
 	th, td{
@@ -29,8 +30,13 @@
 		 background-color:grey;
 	 }
 	 	 
-	body
-	{
+	body{
 		font-family: Georgia;
 		background-color: beige;
+	}
+	
+		
+	div.input {
+		width: 500%;
+		text-align: left;
 	}
