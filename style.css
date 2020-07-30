@@ -1,5 +1,5 @@
 /*
-style.html
+style.css
 7/20/2020
 Course Schedule Maker
 Developed by: Yuxuan Feng and  Chizitere Ogbonna-Onugha
@@ -7,7 +7,6 @@ COMP2680 Web Project
 */
 
 @charset "utf-8";
-
 table{
 	border:1px solid black;
 	border-collapse: collapse;
@@ -16,7 +15,7 @@ table{
 
 th, td{
 	border:1px solid black;
-	width: 180px;
+	width: 10%;
 	height: 100px;
 }
 	
@@ -36,16 +35,17 @@ body{
 	
 div.input {
 	text-align: left;
-	width: 300px;
+	width: 15%;
 	border: 2px solid black;
-	position: relative;
-	left: 200px;
-	top: 100px;
+	position: absolute;
+	left: 12%;
+	top: 12%;
 }
 
 div.table{
-	position: relative;
-	left: 550px;
-	bottom: 100px;
-	width: 900px;
+	position: absolute;
+	border: 1px solid black;
+	left: 30%;
+	bottom: 40%;
+	width: 50%;
 }
