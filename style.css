@@ -12,31 +12,41 @@
 	table{
 		border:1px solid black;
 		border-collapse: collapse;
-		width: 40%;
 		margin: auto;
 	}
 
 	th, td{
 		border:1px solid black;
-		height: 40px;
+		width: 180px;
+		height: 100px;
 	}
 	 
-	 select {
+	select {
 		 background-color:grey;
-	 }
+	}
 	 
-	 thead{
+	thead{
 		 
 		 background-color:grey;
-	 }
+	}
 	 	 
 	body{
 		font-family: Georgia;
 		background-color: beige;
 	}
 	
-		
 	div.input {
-		width: 500%;
 		text-align: left;
+		width: 300px;
+		border: 2px solid black;
+		position: relative;
+		left: 200px;
+		top: 100px;
+	}
+
+	div.table{
+		position: relative;
+		left: 550px;
+		bottom: 100px;
+		width: 900px;
 	}
