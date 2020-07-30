@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 schedule.html
 7/20/2020
 Course Schedule Maker
@@ -10,8 +10,9 @@ COMP2680 Web Project
 <head>
     <title>Course Schedule Maker</title>
     <meta charset="utf-8">   
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet"/>
 </head>
+
 
 <body>
     <div class="input">
@@ -23,17 +24,19 @@ COMP2680 Web Project
             <option value="Friday">Friday</option>
         </select>
         <br>
-        Start Time:<br>
-        <input type="text" id = "hour"> : <input type="text" id = "minute">
+		<br>
+        Start Time:
+        <input type="text" id = "hour" size = 2> : <input type="text" id = "minute" size = 2>
         <select id="meridiem">
             <option value="AM">AM</option>
             <option value="PM">PM</option>
         </select>
         <br>
-        Course:<br>
+		<br>
+        Course:
         <input type="text" id = "course">
-        <br>
-        Location:<br>
+        <br><br>
+        Location:
         <input type="text" id = "location">
         <br><br>
         <input type="submit" value="Generate" onclick="generate()">
@@ -151,4 +154,3 @@ COMP2680 Web Project
     </script>
 </body>
 </html>
-
