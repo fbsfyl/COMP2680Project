@@ -7,122 +7,125 @@ COMP2680 Web Project
 -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Course Schedule Maker</title>
-    <meta charset="utf-8">   
-    <link href="style.css" rel="stylesheet"/>
-    <script src="script.js" defer></script>
-</head>
+    <header id="header-background">
+		<div class="logo"></div>
+	</header>
+    <head>
+        <title>Course Schedule Maker</title>
+        <meta charset="utf-8">   
+        <link href="style.css" rel="stylesheet"/>
+        <script src="script.js" defer></script>
+    </head>
 
 
-<body>
-    <div class="input">
-        <select id="day">
-            <option value ="Monday">Monday</option>
-            <option value ="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-        </select>
-        <br>
-		<br>
-        Start Time:
-        <select id="hour">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-        </select> : <select id="minute">
-            <option value="0">0</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="30">30</option>
-            <option value="35">35</option>
-            <option value="40">40</option>
-            <option value="45">45</option>
-            <option value="50">50</option>
-            <option value="55">55</option>
-        </select>
-        <select id="meridiem">
-            <option value="AM">AM</option>
-            <option value="PM">PM</option>
-        </select>
-        <br>
-		<br>
-        Course:
-        <input type="text" id = "course">
-        <br><br>
-        Location:
-        <input type="text" id = "location">
-        <br><br>
-        <input type="submit" value="Generate" onclick="generate()">
-    </div>
+    <body>
+        <div class="input">
+            <select id="day">
+                <option value ="Monday">Monday</option>
+                <option value ="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+            <br>
+            <br>
+            Start Time:
+            <select id="hour">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+            </select> : <select id="minute">
+                <option value="0">0</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+            </select>
+            <select id="meridiem">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <br>
+            <br>
+            Course:
+            <input type="text" id = "course">
+            <br><br>
+            Location:
+            <input type="text" id = "location">
+            <br><br>
+            <input type="submit" value="Generate" onclick="generate()">
+        </div>
 
-    <div class="table">
-        <table id = "table">
-            <thead>
+        <div class="table">
+            <table id = "table">
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
                 <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-            </thead>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-	<footer>
-		<nav>
-		  <ul>
-			<li><strong>Home</strong></li>
-			<li><a href="page 2.html">Page 2</a></li>
-			<li><a href="page 3.html">Page 3</a></li>
-			<li><a href="page 4.html">Page 4</a></li>
-			<li><a href="page 5.html">Page 5</a></li>
-			<li><a href="page 6.html">Page 6</a></li>
-			<li><a href="page 7.html">Page 7</a></li>
-			
-		  </ul>
-		</nav>
-	</footer>
-</body>
-</html>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <nav>
+            <ul>
+                <li><strong>Home</strong></li>
+                <li><a href="page 2.html">COMP 1131</a></li>
+                <li><a href="page 3.html">COMP 1231</a></li>
+                <li><a href="page 4.html">MATH 1650</a></li>
+                <li><a href="page 5.html">ENGL 1100</a></li>
+                <li><a href="page 6.html">CMNS 1290</a></li>
+                <li><a href="page 7.html">COMP 2680</a></li>
+                
+            </ul>
+            </nav>
+        </footer>
+    </body>
+    </html>

@@ -27,12 +27,12 @@ th, td{
 }
 	
 select {
-		background-color:grey;
+	background-color:grey;
 }
 	
 thead{
 		
-		background-color:grey;
+	background-color:grey;
 }
 		
 body{
@@ -50,9 +50,24 @@ div.input {
 }
 
 div.table{
-	position: absolute;
+	position: relative;
 	border: 1px solid black;
 	left: 30%;
 	bottom: 40%;
 	width: 50%;
+}
+
+footer{
+	position: absolute;
+	top: 40%;
+	left: 11%;
+}
+
+p{
+	width: 30%;
+}
+
+p, h1, h2{
+	position: relative;
+	left: 12%;
 }
